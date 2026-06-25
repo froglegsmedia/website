@@ -180,6 +180,9 @@ h2.light span{color:var(--gb)}
 
 /* PIPELINE — clean numbered list */
 #pipeline{background:var(--cream)}
+  @media(max-width:768px){
+  .pipeline-logo{display:none}
+}
 .pipeline{display:flex;flex-direction:column}
 .p-step{
   display:grid;
@@ -597,7 +600,7 @@ footer p{font-size:0.74rem;color:rgba(252,249,244,0.22);font-weight:300}
 
 <!-- PIPELINE -->
 <section id="pipeline">
-  <div style="float:right;width:25%;max-width:300px;min-width:120px;margin:0 25% 2rem 2rem;">
+  <div class="pipeline-logo" style="float:right;width:25%;max-width:300px;min-width:120px;margin:0 25% 2rem 2rem;">
     <img style="width:100%;" src="FLM LOGO CRAYON small.jpg" alt="Frog Legs Media">
   </div>
   <div class="eyebrow">How We Work</div>
