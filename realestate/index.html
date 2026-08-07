@@ -4,13 +4,18 @@
   Matches the froglegsmedia.com brand (colors/fonts pulled live from the site).
 
   TO PUBLISH:
-  Drop this file into your site repo (e.g. /real-estate.html) and link to it from
-  wherever you're referencing it. Logo path assumes this file sits at the site root,
-  same as the homepage.
+  This file is already set up as /realestate/index.html — drop the whole "realestate"
+  folder into your repo root as-is. GitHub Pages will serve it automatically at
+  froglegsmedia.com/realestate/
 
   TO ADD YOUR PHOTOS:
-  Find id="gallery" below. Each placeholder box is a <div class="ph">Label</div> —
-  replace it with <img src="your-photo.jpg" alt="..."> and it drops right into the grid.
+  The gallery below already expects these exact filenames, sitting in this SAME
+  "realestate" folder next to index.html: exterior.jpg, kitchen.jpg, living-room.jpg,
+  primary-suite.jpg, bathroom-1.jpg, bathroom-2.jpg, bedroom-1.jpg, bedroom-2.jpg,
+  dining-room.jpg. Upload photos with those names (via GitHub's Add file > Upload files)
+  from your "pics for real esate stie" folder and they'll appear automatically — no code
+  changes needed. If you rename anything, just update the matching src="" under
+  id="gallery" below.
 -->
 <html lang="en">
 <head>
@@ -119,14 +124,15 @@
 <section class="gallery" id="gallery">
   <div class="wrap">
     <div class="gallery-grid">
-      <div class="ph span2">Exterior / Curb Appeal</div>
-      <div class="ph">Kitchen</div>
-      <div class="ph">Living Room</div>
-      <div class="ph">Primary Suite</div>
-      <div class="ph">Bathroom</div>
-      <div class="ph">Backyard</div>
-      <div class="ph">Aerial / Lot</div>
-      <div class="ph">Dining Room</div>
+      <div class="ph span2"><img src="exterior.jpg" alt="Exterior"></div>
+      <div class="ph"><img src="kitchen.jpg" alt="Kitchen"></div>
+      <div class="ph"><img src="living-room.jpg" alt="Living Room"></div>
+      <div class="ph"><img src="primary-suite.jpg" alt="Primary Suite"></div>
+      <div class="ph"><img src="bathroom-1.jpg" alt="Bathroom"></div>
+      <div class="ph"><img src="bathroom-2.jpg" alt="Bathroom"></div>
+      <div class="ph"><img src="bedroom-1.jpg" alt="Bedroom"></div>
+      <div class="ph"><img src="bedroom-2.jpg" alt="Bedroom"></div>
+      <div class="ph"><img src="dining-room.jpg" alt="Dining Room"></div>
     </div>
   </div>
 </section>
